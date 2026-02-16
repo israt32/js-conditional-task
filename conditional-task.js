@@ -45,3 +45,57 @@ else if(bmi >=25 && bmi <=29.9){
 else{
   console.log('you are obese')
 }
+
+/***
+
+Grade Calculator
+
+Create a simple JavaScript program that takes a student's score as input and returns their corresponding grade based on the following grading scale:
+
+    A: 90-100
+    B: 80-89
+    C: 70-79
+    D: 60-69
+    F: 0-59
+
+***/
+
+var studentMark = 55;
+
+if(studentMark >= 90 && studentMark <=100){
+  console.log('A')
+}
+else if(studentMark >= 80 && studentMark <= 89){
+  console.log('B')
+}
+else if(studentMark >= 70 && studentMark <= 79){
+  console.log('C')
+}
+else if(studentMark >= 60 && studentMark <= 69){
+  console.log('D')
+}
+else{
+  console.log('F')
+}
+
+
+// another solution
+
+if(studentMark < 0 || studentMark > 100){
+ console.log('invalid mark')
+}
+else if(studentMark >= 90){
+  console.log('A')
+}
+else if(studentMark >= 80){
+  console.log('B')
+}
+else if(studentMark >= 70){
+  console.log('C')
+}
+else if(studentMark >= 60){
+  console.log('D')
+}
+else{
+  console.log('F')
+}
