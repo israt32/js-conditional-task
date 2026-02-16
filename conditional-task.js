@@ -160,3 +160,38 @@ else{
 }
 
 result = num1 > num2 ? num1 *2 : num1 + num2;
+
+/***
+
+Ticket fare Calculator
+    - Children (age < 10): free
+    - Students get a 50% discount
+    - Senior citizens (age >= 60) gets a 15% Discount
+    - Otherwise Regular ticket fare 800 tk
+*/
+
+let student = true;
+let age = 20;
+
+let ticketPrice = 800;
+let ticket;
+
+if(age < 10){
+  ticket = 0;
+
+}
+else if (student){
+  // 50% discount
+  let discount = ticketPrice * (50 / 100);
+  ticket = ticketPrice - discount;
+}
+else if(age >= 60){
+  // 15% discount
+  let discount = ticketPrice * (15 /100);
+  ticket = ticketPrice - discount;
+}
+else{
+  ticket = ticketPrice
+}
+
+console.log(ticket)
